@@ -1,8 +1,7 @@
-# Full-Stack-Project-4
-
 # Deploying a Flask API
 
 In this project you will containerize and deploy a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
+
 The Flask app that will be used for this project consists of a simple API with three endpoints:
 
 - `GET '/'`: This is a simple health check, which returns the response 'Healthy'. 
@@ -11,11 +10,11 @@ The Flask app that will be used for this project consists of a simple API with t
 
 The app relies on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so you will be using the production-ready [Gunicorn](https://gunicorn.org/) server when deploying the app.
 
-# Initial setup
+## Initial setup
 1. Fork this project to your Github account.
 2. Locally clone your forked version to begin working on the project.
 
-# Dependencies
+## Dependencies
 
 - Docker Engine
     - Installation instructions for all OSes can be found [here](https://docs.docker.com/install/).
@@ -23,7 +22,7 @@ The app relies on a secret set as the environment variable `JWT_SECRET` to produ
  - AWS Account
      - You can create an AWS account by signing up [here](https://aws.amazon.com/#).
      
-# Project Steps
+## Project Steps
 
 Completing the project involves several steps:
 
